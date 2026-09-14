@@ -1,18 +1,23 @@
 Retail Customer Shopping Behavior
+
 By Thejeshri Rajesh
+
 To do: Analysis of customer shopping behavior using transactional data from 3,900 purchases
 across various product categories. The goal is to uncover insights into spending patterns,
 customer segments, product preferences, and subscription behavior to guide strategic business
 decisions.
+
 Business Problem:
 A leading retail company wants to better understand its customers' shopping behavior in order to
 improve sales, customer satisfaction, and long-term loyalty. Management has noticed changes in
 purchasing patterns across demographics, product categories, and sales channels, and wants to
 know which factors — discounts, reviews, seasons, payment preferences — drive consumer
 decisions and repeat purchases.
+
 Question we're trying to answer!
 How can the company leverage consumer shopping data to identify trends, improve customer
 engagement, and optimize marketing and product strategies?
+
 Dataset Summary:
 - Rows: 3,900
 - Columns: 18
@@ -23,6 +28,7 @@ Color)
 - Shopping behavior (Discount Applied, Promo Code Used, Previous Purchases,
 Frequency of Purchases, Review Rating, Shipping Type)
 - Missing data: 37 values in the Review Rating column
+- 
 Exploratory Data Analysis (Python):
 Data preparation and cleaning was done in Python:
 - Data loading: imported the dataset with pandas
@@ -39,6 +45,7 @@ number of days
 for every row, and dropped promo_code_used
 - Database integration: connected the Python script to PostgreSQL and loaded the
 cleaned dataframe in for SQL analysis
+
 SQL Analysis:
 Ran structured queries in PostgreSQL to answer 10 business questions, with results below.
 1. Revenue by gender Male customers generated $157,890 in revenue vs. $75,191 for female
@@ -61,6 +68,7 @@ are non-subscribers and 958 are subscribers.
 10. Revenue by age group Young Adult ($62,143), Middle-aged ($59,197), Adult ($55,978),
 Senior ($55,763).
 Full queries in the SQL Queries document inside the repository
+
 Dashboard (Power BI):
 Built an interactive dashboard to present the insights visually — filters for subscription status,
 gender, category, and shipping type, with visuals for number of customers, average purchase
@@ -80,6 +88,7 @@ Tools Used:
 - Python (pandas, SQLAlchemy, psycopg2)
 - PostgreSQL
 - Power BI
+- 
 Author:
 Thejeshri Rajesh
 LinkedIn: www.linkedin.com/in/thejeshrirajesh
